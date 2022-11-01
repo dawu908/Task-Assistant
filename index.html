@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+    <!-- sidebar -->
+    <div class="sidebar">
+        <div class="container">
+            <div class="title">
+                <a href='index.html'><img src="TAlogo.svg" alt=""></a>
+                <p>任務管理系統</p>
+            </div>
+            <hr>
+            <div class="groupName">
+                <h1>Manta Tech.</h1>
+                <div class="dropDown">
+                    <svg class="Icon DownIcon" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+                        <path
+                            d="M16,22.5c-0.3,0-0.7-0.1-0.9-0.3l-11-9c-0.6-0.5-0.7-1.5-0.2-2.1s1.5-0.7,2.1-0.2l10,8.2l10-8.2c0.6-0.5,1.6-0.4,2.1,0.2c0.5,0.6,0.4,1.6-0.2,2.1l-11,9C16.7,22.4,16.3,22.5,16,22.5z">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+            <hr>
+            <div class="keyFunction">
+                <div class="function groupTask"><p>團隊任務總覽</p></div>
+                <div class="function myTask"><p>我的任務</p></div>
+                <div class="function assignedTask"><p>已指派任務</p></div>
+                <div class="function Bin"><p>回收桶</p></div>
+            </div>
+            <hr>
+            <div class="projects">
+                <h4>我的團隊</h4>
+                <div class="project project1"><p>毒防案</p></div>
+                <div class="project project2"><p>古坑案</p></div>
+                <div class="project project3"><p>緊急車輛案</p></div>
+                <div class="project project4"><p>遠通電收案</p></div>
+            </div>
+            <hr>
+            <div class="members">
+                <h4>團隊成員</h4>
+                <div class="member member1"><p>Jensen</p></div>
+                <div class="member member2"><p>Tiffany</p></div>
+                <div class="member member3"><p>Tong</p></div>
+                <div class="member member4"><p>Lurid</p></div>
+            </div>
+        </div>
+    </div>
+    <!-- workspace -->
+    <div class="workspace">
+        <div class="header">
+            <div class="container">
+                <form>
+                    <input type="search" placeholder="搜尋">
+                    <button>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+                <div class="user">
+                    <div class="notification">
+                        <img src="bell.svg" alt="">
+                    </div>
+                    <div class="photo">
+                        <img src="user.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pageAttribute">    
+            <div class="pageTitle">
+                <h1>我的任務</h1>
+                <div class="taskAttribute">
+                    <div class="uncompleted"><h3>未完成</h3></div>
+                    <div class="completed"><h3>已完成</h3></div>
+                </div>
+            </div>
+            <div class="progressIcon">
+                <div class="progress expired">
+                    <div class="circle ex"></div>
+                    <p>已截止</p>
+                </div>
+                <div class="progress threeDays">
+                    <div class="circle three"></div>
+                    <p>三天內截止</p>
+                </div>
+                <div class="progress tenDays">
+                    <div class="circle ten"></div>
+                    <p>十天內截止</p>
+                </div>
+                <div class="progress moreThanTenDays">
+                    <div class="circle more"></div>
+                    <p>十天以上截止</p>
+                </div>
+            </div>
+        </div>
+        <div class="taskList">
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">指派時間</th>
+                        <th scope="col">指派者</th>
+                        <th scope="col">任務內容</th>
+                        <th scope="col">進度回報</th>
+                        <th scope="col">執行狀態</th>
+                        <th scope="col">截止時間</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><div class="dueDate"><div class="circle three"></div>2022/09/01 15:30</div></td>
+                        <td>Jensen</td>
+                        <td>修訂期中報告書</td>
+                        <td><div class="reportBtn"><button>回報</button></div></td>
+                        <td><div class="progressBtn">
+                            <button class="doing">
+                                執行中 23%
+                                <i class="fa-solid fa-caret-down"></i>
+                            </button></div>
+                        </td>
+                        <td>2022/09/30</td>
+                    </tr>
+                    <tr>
+                        <td><div class="dueDate">
+                            <div class="circle ten"></div>2022/09/01 15:30
+                        </div></td>
+                        <td>Jensen</td>
+                        <td>修訂期中報告書</td>
+                        <td>
+                            <div class="reportBtn"><button>回報</button></div>
+                        </td>
+                        <td>
+                            <div class="progressBtn">
+                                <button class="doing">
+                                    執行中 56%
+                                    <i class="fa-solid fa-caret-down"></i>
+                                </button>
+                            </div>
+                        </td>
+                        <td>2022/09/30</td>
+                    </tr>
+                    <tr>
+                        <td><div class="dueDate">
+                            <div class="circle ten"></div>2022/09/01 15:30
+                        </div></td>
+                        <td>Jensen</td>
+                        <td>修訂期中報告書</td>
+                        <td>
+                            <div class="reportBtn"><button>回報</button></div>
+                        </td>
+                        <td>
+                            <div class="progressBtn">
+                                <button class="doing">
+                                    執行中 42%
+                                    <i class="fa-solid fa-caret-down"></i>
+                                </button>
+                            </div>
+                        </td>
+                        <td>2022/09/30</td>
+                    </tr>
+                    <tr>
+                        <td><div class="dueDate">
+                            <div class="circle more"></div>2022/09/01 15:30
+                        </div></td>
+                        <td>Jensen</td>
+                        <td>修訂期中報告書</td>
+                        <td>
+                            <div class="reportBtn"><button>回報</button></div>
+                        </td>
+                        <td>
+                            <div class="progressBtn">
+                                <button class="doing">
+                                    執行中 12%
+                                    <i class="fa-solid fa-caret-down"></i>
+                                </button>
+                            </div>
+                        </td>
+                        <td>2022/09/30</td>
+                    </tr>
+                    <tr>
+                        <td><div class="dueDate">
+                            <div class="circle more"></div>2022/09/01 15:30
+                        </div></td>
+                        <td>Jensen</td>
+                        <td>修訂期中報告書</td>
+                        <td>
+                            <div class="reportBtn"><button>回報</button></div>
+                        </td>
+                        <td>
+                            <div class="progressBtn">
+                                <button class="toDo">
+                                    未開始執行
+                                    <i class="fa-solid fa-caret-down"></i>
+                                </button>
+                            </div>
+                        </td>
+                        <td>2022/09/30</td>
+                    </tr>
+                    <tr>
+                        <td><div class="dueDate">
+                            <div class="circle more"></div>2022/09/01 15:30
+                        </div></td>
+                        <td>Jensen</td>
+                        <td>修訂期中報告書</td>
+                        <td>
+                            <div class="reportBtn"><button>回報</button></div>
+                        </td>
+                        <td>
+                            <div class="progressBtn">
+                                <button class="toDo">
+                                    未開始執行
+                                    <i class="fa-solid fa-caret-down"></i>
+                                </button>
+                            </div>
+                        </td>
+                        <td>2022/09/30</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="createTaskBtn">
+            <div class="createIcon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="44.994" height="44.994" viewBox="0 0 44.994 44.994">
+                    <g id="组_36" data-name="组 36" transform="translate(44.994) rotate(90)">
+                        <line id="直线_2" data-name="直线 2" x2="44.994" transform="translate(0 22.497)" fill="none" stroke="#111043"
+                            stroke-width="3" />
+                        <line id="直线_3" data-name="直线 3" y2="44.994" transform="translate(22.497)" fill="none" stroke="#111043"
+                            stroke-width="3" />
+                    </g>
+                </svg>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

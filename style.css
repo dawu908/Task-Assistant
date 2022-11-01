@@ -1,0 +1,333 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Noto Sans TC', sans-serif;
+    /* font-family: "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif; */
+}
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+hr{
+    border: 0.01px solid #C4C4D6;
+    width: 200px;
+    margin: 0 auto;
+    opacity: .5;
+}
+/* sidebar */
+.sidebar{
+    width: 250px;
+    height: 100%;
+    background: #111043;
+    color: white;
+    /* padding: 15px; */
+}
+
+/* title */
+.title{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+.title img{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    margin-left: 15px;
+}
+
+/* groupName */
+.groupName{
+    display: flex;
+    align-items: flex-end;
+    margin: 12px 0;
+    padding-left: 15px;
+}
+.groupName h1{
+    font-size: 34px;
+}
+.dropDown{
+    margin-right: 10px;
+    cursor: pointer;
+}
+.Icon {
+    width: 16px;
+    height: 16px;
+    fill: white;
+}
+
+/* keyFunction */
+.keyFunction{
+    margin: 12px 0;
+}
+.function{
+    height: 32px;
+    align-items: center;
+    display: flex;
+    align-items: center;
+}
+.function p{
+    padding-left: 15px;
+}
+.function:hover{
+    cursor: pointer;
+    background-color: #C4C4D6;
+    color: #111043;
+}
+
+/* projects */
+.projects{
+    margin: 12px 0;
+}
+.projects h4{
+    height: 32px;
+    padding-left: 15px;
+}
+.project p{
+    padding-left: 15px;
+}
+.project{
+    height: 32px;
+    display: flex;
+    align-items: center;
+}
+.project:hover{
+    cursor: pointer;
+    background: #C4C4D6;
+    color: #111043;
+}
+
+/* members */
+.members{
+    margin: 12px 0;
+}
+.members h4{
+    height: 32px;
+    padding-left: 15px;
+}
+.member{
+    height: 32px;
+    display: flex;
+    align-items: center;
+}
+.member p{
+    padding-left: 15px;
+}
+.member:hover{
+    cursor: pointer;
+    background: #c9c9dc;
+    color: rgb(17, 16, 67);
+}
+
+/* workspace */
+.workspace{
+    width: 100%;
+}
+
+/* header */
+.header{
+    display: flex;
+    background: #f9f9ff;
+    box-shadow: 0px 3px 10px rgba(17,16,67,.1);
+    height: 64px;
+}
+.header .container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.user{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 20px;
+}
+.user img{
+    width: 45px;
+    height: 45px;
+}
+.notification{
+    margin-right: 15px;
+    cursor: pointer;
+}
+.photo{
+    cursor: pointer;
+}
+form{
+    display: flex;
+    border: #111043 solid 1px;
+    border-radius: 100px;
+    margin-left: 40px;
+    width: 200px;
+}
+form input,button{
+    padding: 5px 10px;
+    background-color: transparent;
+    border: none;
+}
+form input{
+    margin-left: 10px;
+    color: #111043;
+    width: 150px;
+}
+form input:focus{
+    outline: none;
+}
+form button{
+    color: #111043;
+    cursor: pointer;
+}
+
+/* pageAttribute */
+.pageAttribute{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+.pageTitle h1{
+    font-size: 40px;
+}
+.taskAttribute{
+    display: flex;
+    font-size: 22px;
+    position: relative;
+}
+.taskAttribute h3{
+    margin-top: 15px;
+    cursor: pointer;
+}
+.taskAttribute .uncompleted::after{
+    content: '';
+    height: 7px;
+    width: 80px;
+    position: absolute;
+    margin-top: 7px;
+    background: #111043;
+}
+.taskAttribute .completed{
+    margin-left: 40px;
+}
+.progressIcon{
+    display: flex;
+    align-items: flex-end;
+}
+.circle{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #111043;
+    margin-right: 10px;
+}
+.ex{
+    background-color: #aaa;
+}
+.three{
+    background-color: #f25858;
+}
+.ten{
+    background-color: #f6d26f;
+}
+.more{
+    background-color: #58e57e;
+}
+.progress{
+    margin: 10px;
+    display: flex;
+    align-items: center;
+}
+
+/* taskList */
+.taskList{
+    padding: 0 40px;
+}
+table{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    color: #111043;
+    border-collapse: collapse;
+}
+table th{
+    padding: 15px;
+    border-bottom: 1px solid #C4C4D6;
+}
+table td{
+    padding: 15px;
+    border-bottom: 1px solid #C4C4D6;
+}
+.dueDate{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.reportBtn button{
+    background-color: #f25858;
+    width: 90px;
+    border-radius: 100px;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s;
+    padding: 10px 0;
+}
+.reportBtn button:hover{
+    background-color: #cf3737;
+}
+.progressBtn button{
+    width: 140px;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: .3s;
+    padding: 10px 0;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+.progressBtn .doing{
+    background-color: #d8d8e5;
+    color: #111043;
+}
+.progressBtn .doing:hover{
+    background-color: #c2c2d9;
+}
+.progressBtn .toDo{
+    background-color: #111043;
+    color: #fff;
+}
+.progressBtn .toDo:hover{
+    background-color: #100f2c;
+}
+.progressBtn i{
+    margin-left: 5px;
+    margin-right: -5px;
+}
+
+/* createTaskBtn */
+.createTaskBtn{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #d8d8e5;
+    display: flex;
+    cursor: pointer;
+    transition: .3s;
+    position: fixed;
+    bottom: 40px;
+    left: auto;
+    right: 40px;
+}
+.createTaskBtn:hover{
+    box-shadow: 0 3px 15px rgba(17, 16, 67, .4);
+    background-color: #c2c2d9;
+}
+.createIcon{
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 50%;
+}
